@@ -1,0 +1,18 @@
+Import('env', 'plugins')
+
+# Guo2018
+plugins += env.SharedLibrary('multilayered_guo2018', ['bsdfs/multilayered_guo2018.cpp'])
+plugins += env.SharedLibrary('instancedtexture_guo2018', ['textures/instancedtexture_guo2018.cpp'])
+plugins += env.SharedLibrary('homogeneous_aniso_guo2018', ['medium/homogeneous_aniso_guo2018.cpp'])
+
+
+# Ours 
+plugins += env.SharedLibrary('fast_accurate', ['bsdfs/fast_accurate.cpp'])
+
+# INTEGRATORS
+plugins += env.SharedLibrary('pathwsampler', ['integrators/pathwsampler.cpp'])
+plugins += env.SharedLibrary('directwsampler', ['integrators/directwsampler.cpp'])
+plugins += env.SharedLibrary('directlightsampling', ['integrators/directlightsampling.cpp'])
+plugins += env.SharedLibrary('directbsdfsampling', ['integrators/directbsdfsampling.cpp'])
+
+Export('plugins')

@@ -1,0 +1,65 @@
+# Documentation
+doc/apidocs/*
+doc/*.aux
+doc/*.log
+doc/*.out
+doc/*.toc
+doc/*.bbl
+doc/*.blg
+doc/main.pdf
+doc/plugins_generated.tex
+
+# Build-related
+conftest_0.obj
+.sconf_temp
+build/release
+build/debug
+debian
+.sconsign.dblite
+config.py
+config.log
+*.pyc
+
+# MSVC++-related
+build/mitsuba-msvc2019.sdf
+build/mitsuba-msvc2019.suo
+build/mitsuba-msvc2019.vcxproj.user
+build/.vs/**/*
+build/debug_*
+build/release_*
+data/windows/mitsuba_res.res
+data/windows/wmain_stub.obj
+dist
+*.user
+
+# VSCode-related
+.vscode/ipch
+**/.vscode/ipch
+
+# Debugging history files
+\.gdb_history
+
+# Dependencies
+dependencies
+deps
+
+# OSX binaries and byproducts
+Mitsuba.app
+.DS_Store
+
+# Imported geometry and some default output types
+/meshes
+/textures
+mitsuba.*.log
+*.mip
+/scenes/**/*.exr
+
+# Eclipse CDT project files
+.externalToolBuilders
+.settings
+.cproject
+.project
+
+# LEGG
+doc/
+*.bak*
